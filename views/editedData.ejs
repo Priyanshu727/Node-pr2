@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="/insertData" method="post" >
+
+        <table align="center"  cellspacing="0" cellpadding="5" style="width: 500px; margin: auto; padding: 20px;"> 
+            <caption>
+                <h1 style="text-align: start; margin-top: 55px;">EDIT TASK DATA</h1>
+            </caption>
+            <tr>
+                <th>Task No</th>
+                <td><input type="text" name="taskId" id="" value="<%= use.taskId %>" disabled style="padding: 15px 15px; margin-left:10px; border-radius:10px; border:0;">
+                    <input type="hidden" name="editId" id="" value="<%= use.taskId %>">
+
+                </td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="name" id="" value="<%= use.name %>" style="padding: 15px 15px; margin-left:10px; border-radius:10px; border:0;" value="<%= use.name %>"></td>
+            </tr>
+
+            <tr>
+                <th></th>
+                <td><input type="submit" value="Update" style="padding:10px 20px; margin-top: 10px; border-radius:10px; background-color:green; border:0; text-decoration:none; color:white;"></td>
+            </tr>
+        </table>
+
+
+    </form>
+
+</body>
+
+</html>
